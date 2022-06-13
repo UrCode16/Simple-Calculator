@@ -3,7 +3,6 @@ import keyboard
 
 #Made by Ur Manager (@UrCode16 on GitHub)
 #Thanks for using this code!
-#Enjoy your simple keyboard
 
 ver = 2.5 #Version
 
