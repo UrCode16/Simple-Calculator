@@ -6,7 +6,7 @@ import keyboard
 
 ver = 2.5 #Version
 
-print(f"Welcome to my calculator version: {ver}")
+print(f"Welcome to my calculator! Version: {ver}")
 print("GitHub: @UrCode16")
 A = input("\nChoose operation (+, -, *, /): ")
 B = int(input("Choose the first number: "))
