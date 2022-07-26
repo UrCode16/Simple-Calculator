@@ -1,52 +1,31 @@
+#You must have installed keyboard module (pip install keyboard)
 import time
 import keyboard
 
 #Made by Ur Manager (@UrCode16 on GitHub)
 #Thanks for using this code!
 
-ver = 2.5 #Version
+ver = 3.1 #Version
 
 print(f"Welcome to my calculator! Version: {ver}")
 print("GitHub: @UrCode16")
-A = input("\nChoose operation (+, -, *, /): ")
-B = int(input("Choose the first number: "))
-C = int(input("Choose the second number: "))
+print("\nUse only These operations: +, -, *, /")
+print("Syntax must be NUM. OPERATION NUM. (Example: 1+1)")
+A = input("\nEnter: ")
 
-if A == "+":
-    print("The answer is:", B+C)
-
-if A == "-":
-    print("The answer is:", B-C)
-
-if A == "*":
-    print("The answer is:", B*C)
-
-if A == "/":
-    print("The answer is:", B/C)
+print("The answer is:", eval(A))
 
 time.sleep(1)
 
 print("\nIf u want calculate something else press Enter", end="")
 
 run = True
-while run == True:
+while run:
     if keyboard.is_pressed("Enter"):
         input("")
-        A = input("Choose operation (+, -, *, /): ")
-        B = int(input("Choose the first number: "))
-        C = int(input("Choose the second number: "))
+        A = input("Enter: ")
             
-        if A == "+":
-            print("The answer is:", B+C)
-            
-        if A == "-":
-            print("The answer is:", B-C)
-            
-        if A == "*":
-            print("The answer is:", B*C)
-            
-        if A == "/":
-            print("The answer is:", B/C)
+        print("The answer is:", eval(A))
             
         time.sleep(1)
             
